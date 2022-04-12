@@ -79,7 +79,7 @@
             width: 100%;
             margin-top: 1rem;
             background-color: var(--color-primary-dark);
-            padding: 1rem 0;
+            padding: 1.5rem 0 1rem 0;
             .title {
                 font-weight: 500;
                 font-size: 16px;
@@ -87,7 +87,7 @@
             h4 {
                 font-weight: 700;
                 font-size: 64px;
-                margin-top: 1rem;
+                margin-top: 10px;
                 span {
                     font-weight: 300;
                     font-size: 32px;
@@ -96,54 +96,93 @@
             }
         }
 
-    }
-
-}
-
-.wind-degree-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    span {
-        width: 2rem;
-        height: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--color-search-btn);
-        border-radius: 50%;
-        margin-right: 1rem;
-        .wind-degree-icon {
-            font-size: 1.3rem;
-        }
-    }
-}
-
-.humidity-wrapper {
-    .percentage-bar-wrapper{
-        
-        .top {
-            width: 229px;
+        .wind-degree-wrapper {
             display: flex;
-            justify-content: space-between;
-        }
-        .bar-container {
-            height: 8px;
-            width: 229px;
-            background-color: var(--color-primary-light);
-            border-radius: 3px;
-            padding: 3px;
-            display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
+            font-weight: 500;
+            font-size: 14px;
+            span {
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--color-search-btn);
+                border-radius: 50%;
+                margin-right: 1rem;
+                .wind-degree-icon {
+                    font-size: 1.3rem;
+                }
+            }
+        }
 
-            .bar-filler {
-                background-color: var(--color-fill);
-                max-height: 6px;
-                border-radius: 3px;
+        .humidity-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .percentage-bar-wrapper{
+                width: 229px;
+                margin: 0;
+                padding: 0;
+                .top {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0;
+                    margin-bottom: 5px;
+                }
+                .bar-container {
+                    height: 8px;
+                    width: 100%;
+                    background-color: var(--color-primary-light);
+                    border-radius: 3px;
+                    padding: 0;
+                    margin-top: 0;
+        
+                    .bar-filler {
+                        background-color: var(--color-fill);
+                        border-radius: 3px;
+                        padding: 4px;
+                        margin-top: 0;
+                    }
+                }
+                .bottom {
+                    width: 100%;
+                    text-align: right;
+                    padding: 0;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .visibility-wrapper,
+        .air-pressure-wrapper {
+            h4 {
+                margin-bottom: 1rem;
+            }
+        }
+
+    }
+
+    footer {
+        background-color: var(--color-secondary-dark);
+        color: var(--color-secondary-light);
+        padding: 3rem 0.6rem 2rem 0.6rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        a {
+            color: var(--color-secondary-light);
+            font-weight: 700;
+            &:visited {
+                color: var(--color-button);
+            }
+            &:hover {
+                color: var(--color-fill);
             }
         }
     }
+
 }
+
