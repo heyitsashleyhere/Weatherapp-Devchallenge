@@ -1,6 +1,7 @@
 import { Navigation } from "@mui/icons-material";
 import { useContext, useEffect, useState } from "react"
 import { UserContext } from "./context/userContext";
+import './styles/SubDashboard.scss';
 
 export default function SubDashboard() {
     const {
@@ -25,6 +26,13 @@ export default function SubDashboard() {
                 setForecasts(result.daily.slice(1, 6))
             })
     }, [location, unit, lat, lon])
+
+    function formatVisibility(x) {
+        const withCommas = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        const commaIndex = withCommas.indexOf(',')
+        const newVisibility = withCommas.slice(0, commaIndex+2)
+        return newVisibility
+    }
 
     function degToCompass(num) {
         const val = Math.floor((num / 22.5) + 0.5);
@@ -61,16 +69,16 @@ export default function SubDashboard() {
 
                 <div className="wind-status">
                     <p className="title">Wind Status</p>
-                    <h4>{windStatus} {unit === 'metric' ? `m/s` : `mph`}</h4>
+                    <h4>{windStatus} <span>{unit === 'metric' ? `m/s` : `mph`}</span></h4>
                     <div className="wind-degree-wrapper">
-                        <Navigation className="wind-degree-icon" style={{transform: `rotate(${windDegree}deg`}}/>
+                        <span><Navigation className="wind-degree-icon" style={{transform: `rotate(${windDegree}deg`}}/></span>   
                         <p>{degToCompass(windDegree)}</p>
                     </div>
                 </div>
 
                 <div className="humidity-wrapper">
                     <p className="title">Humidity</p>
-                    <h4>{humidity}%</h4>
+                    <h4>{humidity} <span>%</span></h4>
                     <div className="percentage-bar-wrapper">
                         <div className="top">
                             <p>0</p>
@@ -86,16 +94,16 @@ export default function SubDashboard() {
 
                 <div className="visibility-wrapper">
                     <p className="title">Visibility</p>
-                    <h4>{visibility} miles</h4>
+                    <h4>{formatVisibility(visibility)} <span>meter</span></h4>
                 </div>
 
                 <div className="air-pressure-wrapper">
                     <p className="title">Air Pressure</p>
-                    <h4>{airPressure} mb</h4>
+                    <h4>{airPressure} <span>mb</span></h4>
                 </div>
             </div>
 
-            <footer>created by <a href="https://github.com/heyitsashleyhere" target="_blank">Ashley Jiang</a> - devChallenges.io</footer>
+            <footer>created by <a href="https://github.com/heyitsashleyhere" target="_blank" rel="noreferrer">Ashley Jiang</a> - devChallenges.io</footer>
 
         </section>
     )

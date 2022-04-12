@@ -1,6 +1,7 @@
 import { MyLocation, Place } from "@mui/icons-material";
 import { useContext } from "react";
 import { UserContext } from "./context/userContext.jsx";
+import './styles/MainDashboard.scss';
 
 export default function MainDashboard(){
 
@@ -29,22 +30,24 @@ export default function MainDashboard(){
     return (
         <section className="Main-Dashboard">
             <nav>
-                <button className="Search-toggle-btn"
+                <button className="search-toggle-btn"
                         onClick={handleSearchToggle}>
                     Search for places
                 </button>
-                <MyLocation className="my-location-icon"
-                            onClick={handleMyLocation}/>
+                <div className="my-location-icon"
+                     onClick={handleMyLocation}>
+                    <MyLocation />
+                </div>
             </nav>
 
-            <section className="img-section">
+            <section className="img-section"
+                     style={{'background-image': `url('${process.env.PUBLIC_URL}/images/Cloud-background-dimmed.png')`}}>
                 <img src={ICONURL} alt={description} />
-                {/* <img src={process.env.PUBLIC_URL + `images/${description}.png`}  alt={description} /> */}
             </section>
 
             <main>
-                <h3 className="temperature">{temp} {unit === 'metric' ? `°C` : `°F`}</h3>
-                <h5>{description}</h5>
+                <h1 className="temperature"><span className="temp">{temp}</span> <span className="unit">{unit === 'metric' ? `°C` : `°F`}</span></h1>
+                <h2>{description}</h2>
                 <p> Today · {today}</p>
 
                 <div className="location">

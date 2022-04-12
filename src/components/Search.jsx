@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { UserContext } from "./context/userContext";
-import { NavigateNext, Search } from "@mui/icons-material";
+import { Close, NavigateNext, Search } from "@mui/icons-material";
+import './styles/Search.scss';
 
 export default function SearchSection() {
     const {
@@ -33,6 +34,11 @@ export default function SearchSection() {
 
     return (
         <section className="Search-Section">
+            <div className="close-wrapper">
+                <Close className="close-btn"
+                       onClick={() => setIsSearch(false)}></Close>
+            </div>
+            
             <div className="search-bar">
                 <span className="searchInput-wrapper">
                     <Search className="search-icon"/>
