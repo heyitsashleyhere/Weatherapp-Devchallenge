@@ -19,7 +19,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![demo](demo.gif)
 
 Front-end challenge to create a weather app using an API and a Front-end library:
 - User can see their city weather as default (using prompt for privacy reasons)
@@ -35,6 +35,7 @@ Front-end challenge to create a weather app using an API and a Front-end library
 - User can add cities in their Search section
 - User can switch to their default city by clicking on the target icon
 - __Design:__ devChallenges' Figma File
+![screenshot](figma.png)
 - __Responsive:__ Mobile and Desktop 
 - __NOTE:__ _All data are stored in user's local storage_
 
