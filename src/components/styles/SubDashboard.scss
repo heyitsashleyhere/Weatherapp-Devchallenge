@@ -19,6 +19,7 @@
             align-items: center;
             font-weight: 700;
             font-size: 1rem;
+            cursor: pointer;
         }
         @media only screen and (min-width: 768px) {
             display: flex;
@@ -26,9 +27,12 @@
             padding-top: 2rem;
             
             .metric {
+                margin-right: 12px;
+            }
+
+            .selected {
                 background-color: var(--color-primary-light);
                 color: var(--color-secondary-dark);
-                margin-right: 12px;
             }
            
         }

@@ -43,9 +43,9 @@ export default function SubDashboard() {
     return (
         <section className="SubDashboard">
             <div className="unit-bar">
-                <div className="metric"
+                <div className={unit==="metric" ? "metric selected" : "metric"}
                      onClick={() => setUnit("metric")}>°C</div>
-                <div className="imperial"
+                <div className={unit==="imperial" ? "imperial selected" : "imperial"}
                      onClick={() => setUnit("imperial")}>°F</div>
             </div>
 
