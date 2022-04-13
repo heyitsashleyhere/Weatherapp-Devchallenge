@@ -21,7 +21,8 @@
 
 ![demo](demo.gif)
 
-Front-end challenge to create a weather app using an API and a Front-end library:
+Frontend challenge to create a weather app using an API and a Frontend library:
+
 - User can see their city weather as default (using prompt for privacy reasons)
 - User can see weather of today and the next 5 days
 - User can see the date and location of weather
@@ -36,8 +37,9 @@ Front-end challenge to create a weather app using an API and a Front-end library
 - User can switch to their default city by clicking on the target icon
 - __Design:__ devChallenges' Figma File
 ![screenshot](figma.png)
-- __Responsive:__ Mobile and Desktop 
-- __NOTE:__ _All data are stored in user's local storage_
+- __Responsive:__ Mobile and Desktop
+- __Duration:__ 2-3 days 
+- __NOTE:__ _All data are stored in user's local storage, no backend_
 
 ### Built With
 
