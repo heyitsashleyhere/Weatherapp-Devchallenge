@@ -9,4 +9,11 @@
 #root{
     font-family: 'Raleway', sans-serif;
     text-align: center;
+
+    .App {
+        @media only screen and (min-width: 768px) {
+            display: flex;
+            height: 100vh;
+        }
+    }
 }

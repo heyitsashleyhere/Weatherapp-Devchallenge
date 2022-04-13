@@ -67,7 +67,7 @@ export default function SubDashboard() {
             <div className="highlights-wrapper">
                 <h5>Today's Highlights</h5>
 
-                <div className="wind-status">
+                <div className="wind-status-wrapper">
                     <p className="title">Wind Status</p>
                     <h4>{windStatus} <span>{unit === 'metric' ? `m/s` : `mph`}</span></h4>
                     <div className="wind-degree-wrapper">
@@ -101,9 +101,9 @@ export default function SubDashboard() {
                     <p className="title">Air Pressure</p>
                     <h4>{airPressure} <span>mb</span></h4>
                 </div>
-            </div>
 
-            <footer>created by <a href="https://github.com/heyitsashleyhere" target="_blank" rel="noreferrer">Ashley Jiang</a> - devChallenges.io</footer>
+                <footer>created by <a href="https://github.com/heyitsashleyhere" target="_blank" rel="noreferrer">Ashley Jiang</a> - devChallenges.io</footer>
+            </div>
 
         </section>
     )
