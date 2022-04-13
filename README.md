@@ -12,10 +12,8 @@
 
 - [Overview](#overview)
   - [Built With](#built-with)
-- [Features](#features)
 - [How to use](#how-to-use)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
@@ -36,7 +34,7 @@ Front-end challenge to create a weather app using an API and a Front-end library
 - User can set temperatures in Celsius or Fahrenheit
 - User can add cities in their Search section
 - User can switch to their default city by clicking on the target icon
-- __Design:__ devChallenges' [Figma file](https://www.figma.com/file/5X3Ao3gEqZPqqKctP7riDF/weather-app)
+- __Design:__ devChallenges' Figma File
 - __Responsive:__ Mobile and Desktop 
 - __NOTE:__ _All data are stored in user's local storage_
 
@@ -49,11 +47,6 @@ Front-end challenge to create a weather app using an API and a Front-end library
 - [Material Design Icons](https://google.github.io/material-design-icons/)
 - [OpenWeatherMap API](https://openweathermap.org/current)
 
-## Features
-
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
-
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv) was to build an application to complete the given user stories.
 
 ## How To Use
 
@@ -63,7 +56,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone git@github.com:heyitsashleyhere/Weatherapp-Devchallenge.git
 
 # Install dependencies
 $ npm install
@@ -72,16 +65,8 @@ $ npm install
 $ npm start
 ```
 
-## Acknowledgements
-
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
-
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+<!-- - Website [your-website.com](https://{your-web-site-link}) -->
+- GitHub [@heyitsashleyhere](https://github.com/heyitsashleyhere)
+- Twitter [@ashhhleyhere](https://twitter.com/ashhhleyhere)
