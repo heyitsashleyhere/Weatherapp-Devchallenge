@@ -24,7 +24,11 @@ export default function SearchSection() {
         e.preventDefault()
         const newLocation = searchInput.charAt(0).toUpperCase() + searchInput.slice(1).toLowerCase()
         setLocation(newLocation)
-        // setIsSearch(!isSearch)
+        if(!locationArray.includes(newLocation)){
+            setLocationArray([...locationArray, newLocation])
+            localStorage.setItem('locations', JSON.stringify(locationArray))
+        }
+        setIsSearch(!isSearch)
     }
 
     function handleListClick(e){
