@@ -56,8 +56,8 @@ export default function SubDashboard() {
                             <p>{i === 0 ? `Tomorrow` : timeConverter(d.dt)}</p>
                             <img src={`http://openweathermap.org/img/wn/${d.weather[0].icon}@2x.png`} alt={d.weather[0].main} />
                             <div className="temp-wrapper">
-                                <p className="day-temp">{Math.round(d.temp.day)}{unit === 'metric' ? `°C` : `°F`}</p>
-                                <p className="night-temp">{Math.round(d.temp.night)}{unit === 'metric' ? `°C` : `°F`}</p>
+                                <p className="max-temp">{Math.round(d.temp.max)}{unit === 'metric' ? `°C` : `°F`}</p>
+                                <p className="min-temp">{Math.round(d.temp.min)}{unit === 'metric' ? `°C` : `°F`}</p>
                             </div>
                         </div>
                     )

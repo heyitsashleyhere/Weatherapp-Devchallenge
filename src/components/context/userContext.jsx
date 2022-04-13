@@ -50,7 +50,6 @@ function UserContextProvider({children}) {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=69644e28c6a9c6d7c04f95ff1035a799&units=${unit}`)
             .then(response => response.json())
             .then(result => {
-                console.log(result);
                 setTemp(Math.round(result.main.temp));
                 setIconId(result.weather[0].icon);
                 setLat((result.coord.lat).toString());
