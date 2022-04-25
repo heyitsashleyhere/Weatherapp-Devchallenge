@@ -36,7 +36,7 @@ Frontend challenge to create a weather app using an API and a Frontend library:
 - User can add cities in their Search section
 - User can switch to their default city by clicking on the target icon
 - __Design:__ devChallenges' Figma File
-![screenshot](figma.png)
+<!-- ![screenshot](figma.png) -->
 - __Responsive:__ Mobile and Desktop
 - __Duration:__ 2-3 days 
 - __NOTE:__ _All data are stored in user's local storage, no backend_
